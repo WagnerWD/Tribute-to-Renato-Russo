@@ -33,5 +33,8 @@ h2{
 
 p{
     text-align: justify;
-    padding: 0.38rem 7.5rem;
+    background-clip: padding-box;
+    padding: 7px 32px;
+    margin: 20px 54px;  
+    background-color: #d8e2da;
 }
