@@ -1,17 +1,22 @@
 body{
-    background-image: linear-gradient(to bottom right, #8E6365, #44959a);;
+    background-image: linear-gradient(to bottom right, #44959a, #8E6365 );;
 }
-
-main{
+.container{
     background-color: #efe3e3;
-    max-width: 100%;
-    max-width: 1124px;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    max-width: 1024px;
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0.4rem;
+}
+
+.introduction{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
 }
 
 h1{
@@ -21,9 +26,8 @@ h1{
     margin-bottom: 0;
 }
 
-h2, h3, p{
+h2, h3, p, figcaption{
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 0;
 }
 
 h2{
@@ -37,4 +41,20 @@ p{
     padding: 7px 32px;
     margin: 20px 54px;  
     background-color: #d8e2da;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+}
+
+.renato-russo-image{
+    height: 250px;
+    border-radius: 10px 10px 0 0 ;
+    
+}
+
+figcaption{
+    padding: 7px 0;
+   text-align: center;
 }
