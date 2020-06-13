@@ -1,5 +1,9 @@
+:root{
+    --main-blue: #44959a
+}
+
 body{
-    background-image: linear-gradient(to bottom right, #44959a, #8E6365 );;
+    background-image: linear-gradient(to bottom right, var(--main-blue), #8E6365 );;
 }
 .container{
     background-color: #efe3e3;
@@ -17,6 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;   
+    padding: 20px;
 }
 
 h1{
@@ -26,7 +31,7 @@ h1{
     margin-bottom: 0;
 }
 
-h2, h3, p, figcaption{
+h2, h3, p, figcaption, .content{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -57,4 +62,66 @@ figure{
 figcaption{
     padding: 7px 0;
    text-align: center;
+}
+
+main{
+    width: 100%;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.content h2{
+    color: var(--main-blue);
+    text-transform: capitalize;
+}
+.time-line, .summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-line{
+    width: 70%;
+}
+
+.summary{
+    width:30%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 92%;
+}
+
+.time-line-font{
+    align-self: flex-end;
+    margin-top: 0;
+    font-style: italic;
+}
+
+tbody tr:nth-child(even){
+    /* background-color: #eb753c; */
+}
+
+tbody tr:nth-child(odd){
+    /* background-color: #57afcc; */
+}
+
+td{
+    letter-spacing: 1px;
+}
+
+tr td:first-child{
+    width: 17%;
+    padding: 5px;
+    border-top: 2px solid var(--main-blue)
+}
+
+tr td:last-child{
+    padding-right: 1.5rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    border-top: 1px solid var(--main-blue)
 }
