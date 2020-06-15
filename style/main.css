@@ -1,127 +1,148 @@
-:root{
-    --main-blue: #44959a
+:root {
+  --main-blue: #44959a;
 }
 
-body{
-    background-image: linear-gradient(to bottom right, var(--main-blue), #8E6365 );;
+body {
+  background-image: linear-gradient(to bottom right, var(--main-blue), #8e6365);
 }
-.container{
-    background-color: #efe3e3;
-    height: 100%;
-    width: 100%;
-    max-width: 1024px;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0.4rem;
-}
-
-.introduction{    
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-    padding: 20px;
+.container {
+  background-color: #efe3e3;
+  height: 100%;
+  width: 100%;
+  max-width: 1124px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.4rem;
 }
 
-h1{
-    font-family: 'Architects Daughter', cursive;
-    font-size: 5rem;
-    font-weight: lighter;
-    margin-bottom: 0;
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-h2, h3, p, figcaption, .content{
-    font-family: 'Roboto', sans-serif;
+h1 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 5rem;
+  font-weight: lighter;
+  margin-bottom: 0;
 }
 
-h2{
-    font-size: rem;
-    margin-bottom: 0;
+h2,
+h3,
+p,
+figcaption,
+.content {
+  font-family: "Roboto", sans-serif;
 }
 
-p{
-    text-align: justify;
-    background-clip: padding-box;
-    padding: 7px 32px;
-    margin: 20px 54px;  
-    background-color: #d8e2da;
+h2 {
+  font-size: rem;
+  margin-bottom: 0;
 }
 
-figure{
-    display: flex;
-    flex-direction: column;
+p {
+  text-align: justify;
+  background-clip: padding-box;
+  padding: 7px 32px;
+  margin: 20px 54px;
+  background-color: #d8e2da;
 }
 
-.renato-russo-image{
-    height: 250px;
-    border-radius: 10px 10px 0 0 ;
-    
+figure {
+  display: flex;
+  flex-direction: column;
 }
 
-figcaption{
-    padding: 7px 0;
-   text-align: center;
+.renato-russo-image {
+  height: 250px;
+  border-radius: 10px 10px 0 0;
 }
 
-main{
-    width: 100%;
-}
-.content{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-.content h2{
-    color: var(--main-blue);
-    text-transform: capitalize;
-}
-.time-line, .summary{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+figcaption {
+  padding: 7px 0;
+  text-align: center;
 }
 
-.time-line{
-    width: 70%;
+main {
+  width: 100%;
 }
 
-.summary{
-    width:30%;
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.content h2 {
+  color: var(--main-blue);
+  text-transform: capitalize;
+}
+
+.time-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 62%;
+  /* margin-top: 0.5rem; */
+}
+
+.time-line__title,
+.summary__title {
+  align-self: center;
+}
+
+.time-line__table table {
+  border-collapse: collapse;
+  width: 92%;
+}
+
+.time-line-font {
+  align-self: flex-end;
+  font-style: italic;
 }
 
 table{
-    border-collapse: collapse;
-    width: 92%;
+  margin-top: .5rem;
+  border-spacing: 0;
 }
 
-.time-line-font{
-    align-self: flex-end;
-    margin-top: 0;
-    font-style: italic;
+td {
+  letter-spacing: 1px;
 }
 
-tbody tr:nth-child(even){
-    /* background-color: #eb753c; */
+.time-line__table tr td:first-child {
+  width: 17%;
+  padding: 5px;
+  border-top: 2px solid var(--main-blue);
 }
 
-tbody tr:nth-child(odd){
-    /* background-color: #57afcc; */
+.time-line__table tr td:last-child {
+  padding-right: 1.5rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  border-top: 1px solid var(--main-blue);
 }
 
-td{
-    letter-spacing: 1px;
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 36%;
+  /* margin-top: 0.5rem; */
 }
 
-tr td:first-child{
-    width: 17%;
-    padding: 5px;
-    border-top: 2px solid var(--main-blue)
+.summary__table tr td:first-child{
+  width: 14%;
+  padding: 5px;
+  border-top: 2px solid var(--main-blue);
 }
 
-tr td:last-child{
-    padding-right: 1.5rem;
-    line-height: 1.5rem;
-    text-align: justify;
-    border-top: 1px solid var(--main-blue)
+.summary tr td:last-child {
+  padding-right: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-top: 1px solid var(--main-blue);
 }
